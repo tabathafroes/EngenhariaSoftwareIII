@@ -1,7 +1,7 @@
 package engenhariaSoftwareIII.Atividade2;
 
 import engenhariaSoftwareIII.Atividade2.calculadores.CalculadorPreco;
-import engenhariaSoftwareIII.Atividade2.descontos.DescontoDiaNamorados;
+import engenhariaSoftwareIII.Atividade2.descontos.Poncentagem;
 import engenhariaSoftwareIII.Atividade2.produtos.Produto;
 
 public class Inicio {
@@ -11,7 +11,7 @@ public class Inicio {
 		    CalculadorPreco calculo = new CalculadorPreco();
 		    Produto p1 = new Produto("Maça", 20);
 		    calculo.produto = p1;
-		    DescontoDiaNamorados d1 = new DescontoDiaNamorados();
+		    Poncentagem d1 = new Poncentagem(90);
 		    calculo.desconto = d1;
 
 		    System.out.println("Valor de cobrança: " + calculo.valor());

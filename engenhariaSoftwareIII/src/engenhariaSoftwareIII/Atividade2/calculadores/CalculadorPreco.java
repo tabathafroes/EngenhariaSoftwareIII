@@ -8,7 +8,7 @@ public class CalculadorPreco{
 	  public Desconto desconto;
 
 	  	public double valor() {
-			return desconto.formaCalcular() * produto.getPreco();
+			return desconto.formaCalcular(produto);
 		}
 	  
 	}
