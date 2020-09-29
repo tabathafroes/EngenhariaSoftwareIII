@@ -2,9 +2,9 @@ package engenhariaSoftwareIII.Atividade3.descontos;
 
 import engenhariaSoftwareIII.Atividade3.produtos.Produto;
 
-public class Poncentagem extends Desconto{
+public class Porcentagem extends Desconto{
 	
-	public Poncentagem(double valorDesconto) {
+	public Porcentagem(double valorDesconto) {
 		super(valorDesconto);
 	}
 

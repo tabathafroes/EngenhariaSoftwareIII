@@ -17,4 +17,13 @@ public class ProdutoKit extends Produto {
 		return valorTotal;
 	}
 
+	@Override
+	public String mostrarDescricao() {
+		String descricao = "Nome do Kit: "+nome+"\n";
+		for (Produto produto: produtos) {
+			descricao = descricao + "Nome: "+produto.nome+"\nDescrição: "+ produto.descricao+"\n";
+		}
+		return descricao;
+	}
+
 }
